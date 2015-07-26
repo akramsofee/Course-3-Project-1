@@ -1,0 +1,13 @@
+#Read.table objects of txt files in dataset. Object names in R correspond to file name.
+activity_labels 
+features
+x_test 
+y_test 
+subject_test
+x_train 
+y_train
+subject_train
+#.all objects are combined tables from directories test and train
+x.all <- rbind(x_test,x_train)
+y.all <- rbind(y_test,y_train)
+subject.all <- rbind(subject_test,subject_train)
